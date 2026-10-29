@@ -48,6 +48,7 @@ details ul{padding-left:18px}
 details li{margin-bottom:6px}
 .r3,.r2,.r1{font-size:11px;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:5px;color:#fff;flex:0 0 auto}
 .r3{background:var(--r3)}.r2{background:var(--r2)}.r1{background:var(--r1)}
+ol.plain{padding-left:20px;margin:0 0 12px}ol.plain li{margin-bottom:6px}
 ol.qs{list-style:none;padding:0;margin:0;counter-reset:q}
 ol.qs li{counter-increment:q;border:1px solid var(--line);border-radius:10px;padding:10px 12px 10px 44px;margin:8px 0;position:relative}
 ol.qs li .q{cursor:pointer;display:block}
@@ -80,13 +81,12 @@ ul.checks li.done{color:var(--mute);text-decoration:line-through}
 <body>
 <main id="app"><header class="top">
   <p class="kicker">Futsides · reunión con el abogado</p>
-  <h1>Lo que hay que llevar en la cabeza</h1>
-  <p class="sub">Preparado el 29 de octubre de 2026 por Marc y Aitor. Marca las preguntas según se vayan respondiendo y apunta lo que diga.</p>
+  <h1>¿Podemos volver a abrir la tienda?</h1>
+  <p class="sub">Marc y Aitor, 29 de octubre de 2026. Marca las preguntas según se vayan respondiendo y apunta lo que diga.</p>
   <nav class="chips">
-    <a href="#resumen">Resumen</a>
-    <a href="#datos">Datos</a>
-    <a href="#hecho">Lo hecho</a>
-    <a href="#expuesto">Lo expuesto</a>
+    <a href="#objetivo">Objetivo</a>
+    <a href="#vendemos">Qué vendemos</a>
+    <a href="#dudas">Dudas</a>
     <a href="#preguntas">Preguntas</a>
     <a href="#ley">La ley</a>
     <a href="#opciones">Opciones</a>
@@ -94,76 +94,51 @@ ul.checks li.done{color:var(--mute);text-decoration:line-through}
   </nav>
 </header>
 
-<section id="resumen" class="card hero">
-  <h2>En 30 segundos</h2>
-  <p>El <b>1 de septiembre de 2026</b> llegó una denuncia por dos cosas: unas imágenes subidas antes de vender y el uso de marcas de clubes y competiciones y de nombres de jugadores. En una semana quitamos las 77 descripciones y cambiamos los nombres con marca literal (CHAMPIONS, UCL, TEAM OF THE YEAR, cartas de EA).</p>
-  <p>Volumen real: <b>2 pedidos, 5 unidades, 103,96 €</b> en toda la vida de la tienda (agosto de 2026). En anuncios de Meta se gastaron 663 €.</p>
-  <p class="warn"><b>El punto débil:</b> los títulos ya están cambiados, pero el póster impreso sigue diciendo el club, el estadio y el entrenador. Por ejemplo, el producto se llama LEONES 2011-12, pero la lámina pone <i>ATHLETIC 2011/12 · ESTADIO SAN MAMÉS · MARCELO BIELSA</i>, con 11 nombres reales, dorsales y la camiseta rojiblanca.</p>
-  <p><b>Lo que buscamos salir sabiendo:</b> qué podemos vender tal cual, qué hay que cambiar en el arte y qué contestamos a la denuncia.</p>
+<section id="objetivo" class="card hero">
+  <h2>Lo que queremos salir sabiendo</h2>
+  <ol class="plain">
+    <li><b>Sí o no:</b> ¿podemos volver a abrir futsides.com?</li>
+    <li><b>Cómo:</b> qué se puede vender tal cual y qué hay que cambiar antes.</li>
+    <li><b>Con qué estructura:</b> a nombre de quién, qué textos legales y qué marca registramos.</li>
+  </ol>
+  <p class="warn"><b>La duda principal:</b> el póster lleva impreso el nombre del club, el estadio, el entrenador y los nombres y dorsales de los jugadores. Por ejemplo, «ATHLETIC 2011/12 · ESTADIO SAN MAMÉS · MARCELO BIELSA» con el once y la camiseta a rayas. No lleva escudos ni logos.</p>
 </section>
 
-<section id="datos" class="card">
-  <h2>Datos a mano</h2>
-  <p class="hint">Lo que esté en amarillo lo rellenamos antes de entrar, o se lo preguntamos a él.</p>
+<section id="vendemos" class="card">
+  <h2>Qué vendemos</h2>
   <dl class="facts">
-    <dt>Fecha de la denuncia</dt><dd>1 de septiembre de 2026</dd>
-    <dt>Quién denuncia</dt><dd class="fill">Club, liga, UEFA, EA, un jugador, un fotógrafo…</dd>
-    <dt>Por qué vía</dt><dd class="fill">Burofax, correo, aviso de Shopify o Meta, juzgado, policía…</dd>
-    <dt>Qué piden</dt><dd class="fill">Retirar productos, dinero, datos de ventas…</dd>
-    <dt>Plazo que dan</dt><dd class="fill">&nbsp;</dd>
-    <dt>¿Se contestó?</dt><dd class="fill">Qué se dijo y cuándo</dd>
-    <dt>Ventas totales</dt><dd>2 pedidos · 5 unidades · 103,96 € (16 y 26 de agosto de 2026)</dd>
-    <dt>Gasto en anuncios</dt><dd>663 € en Meta. Hubo anuncios con equipos concretos (La Décima, Madrid 3D)</dd>
-    <dt>Catálogo</dt><dd>90 productos con alineación (unos 990 nombres de jugadores), 34 campos, 17 cartas y packs</dd>
-    <dt>Titular</dt><dd>Marc es autónomo desde el 11 de agosto de 2026. <span class="fill">¿A nombre de quién están Shopify, el dominio y Meta? ¿Qué papel tiene Aitor sobre el papel?</span></dd>
-    <dt>Otras tiendas del mismo titular</dt><dd>Momenturies, también en Shopify (importa, ver «Plataformas»)</dd>
+    <dt>Pósters de alineaciones</dt><dd>Unos 90 equipos y partidos históricos. Campo dibujado, camisetas con los colores del equipo, nombre y dorsal de cada jugador, y en la cabecera el equipo y la temporada.</dd>
+    <dt>Personalizador «Crea tu 11»</dt><dd>El cliente elige el campo, la camiseta y los nombres. Puede partir de un once ya hecho o elegir jugadores de una lista.</dd>
+    <dt>Campos de diseño propio</dt><dd>34 fondos (NOVA, ORBITA, VINTAGE, TURF…). Algunos llevan un balón de estrellas parecido al de la Champions.</dd>
+    <dt>Cartas y cromos</dt><dd>Carta de jugador con la foto del cliente, con 17 diseños. Unos pocos llevan el «FC» o «TOTY» de los videojuegos de EA. También hay un cromo de estilo mundialista, sin copa ni emblema oficial.</dd>
+    <dt>Sube tu foto</dt><dd>El cliente sube su propia foto y la imprimimos en aluminio.</dd>
+    <dt>Nombres de producto</dt><dd>Apodos y años: LEONES 2011-12, CULÉS, COLCHONEROS, ESPAÑA 2010, LA DÉCIMA… Algunos son muy de un club o de una persona (LOS GALÁCTICOS, ROSSONERI, ZIZOU).</dd>
+    <dt>Lo que no usamos</dt><dd>Escudos, logos de clubes o competiciones y fotos de jugadores.</dd>
+    <dt>Anuncios</dt><dd>Meta (Instagram y Facebook). La tienda está en Shopify.</dd>
   </dl>
 </section>
 
-<section id="hecho" class="card">
-  <h2>Lo que ya hemos hecho</h2>
-  <p class="hint">Sirve para enseñar que actuamos rápido y de buena fe. Todo está guardado y se puede deshacer.</p>
-  <ol class="timeline">
-    <li><span>1 sep</span> Quitadas las <b>77 descripciones</b> de equipos, partidos y packs (y sus traducciones al inglés). No están borradas: se guardaron en un campo interno.</li>
-    <li><span>1 sep</span> Informe de los 129 títulos por nivel de riesgo: 10 alto, 35 medio y 84 bajo.</li>
-    <li><span>7 sep</span> Renombrados los campos con marca literal: CHAMPIONS → NOVA (también BLUE, GOLD y RED), UCL → ORBITA, TEAM OF THE YEAR → ONCE DE ORO, OLIMPO → COLISEO.</li>
-    <li><span>7 sep</span> Renombradas 15 de las 17 cartas para quitar FC 26, TOTY, Icon y Team of the Week/Season (ahora SOLAR, ONIX, ZAFIRO, etc.).</li>
-    <li><span>28 sep</span> Repasados y corregidos los nombres de jugadores (68 erratas). Esto no es legal, pero enseña que los nombres son datos históricos.</li>
-    <li><span>8 oct</span> Norma interna escrita: en SEO, textos de fotos, anuncios y descripciones no se ponen clubes ni sus siglas, ni competiciones (Champions, UEFA, FIFA, Mundial, LaLiga), ni jugadores o sus apodos, ni escudos.</li>
-    <li><span>Siempre</span> No usamos escudos ni logos de clubes en los pósters, solo los colores de la camiseta. En el cromo de estilo mundialista no hay copa ni emblema oficial.</li>
-  </ol>
-</section>
+<section id="dudas" class="card">
+  <h2>Qué nos preocupa de cada cosa</h2>
+  <p class="hint">Ordenado de lo que más dudas nos da a lo que menos.</p>
 
-<section id="expuesto" class="card">
-  <h2>Lo que sigue expuesto</h2>
-  <p class="hint">De más a menos grave, según lo que hemos visto.</p>
-
-  <details open><summary><b class="r3">Alto</b> Nombre del club, estadio y entrenador en el arte impreso</summary>
-    <p>Los 90 pósters llevan el club en grande en la cabecera (ATHLETIC, etc.), el estadio y el entrenador abajo. Cambiar el título de la tienda no cambia la lámina que llega a casa. Los nombres de los clubes casi siempre son marcas registradas, y algunos estadios también.</p>
+  <details open><summary><b class="r3">Más duda</b> Nombre del club en el póster</summary>
+    <p>Los nombres de los clubes suelen ser marcas registradas, y algunos estadios también. ¿Basta con poner un apodo y el año, o el nombre puede ir si es para describir de qué alineación se trata?</p>
   </details>
-  <details open><summary><b class="r3">Alto</b> Dibujos que siguen copiando marcas</summary>
-    <p>NOVA BLUE, GOLD y RED llevan dibujado el balón de estrellas de la Champions. Cuatro cartas llevan el logo «FC» de EA y una lleva «TOTY». Lo decidimos así a sabiendas, y es justo lo que puede usarse para decir que hubo mala fe.</p>
+  <details open><summary><b class="r3">Más duda</b> Dibujos que recuerdan a marcas</summary>
+    <p>El balón de estrellas de los campos NOVA y el «FC» y «TOTY» de algunas cartas. Si hay que quitarlos, se hace fácil.</p>
   </details>
-  <details><summary><b class="r3">Alto</b> Partidos con marca en el título, sin cambiar</summary>
-    <p>FINAL CHAMPIONS 2014, FINAL CHAMPIONS 2018, RMA 0-3 FCB (2005) y RMA 2-6 FCB (2009). De los 10 títulos de riesgo alto, los campos se renombraron el 7 de septiembre, pero estos partidos no.</p>
+  <details><summary><b class="r2">Duda</b> Nombres y dorsales de jugadores</summary>
+    <p>No ponemos su cara, solo el nombre como dato de la alineación. Pero la ley de imagen también protege el nombre cuando se usa para vender. ¿Una alineación histórica cuenta como información?</p>
   </details>
-  <details><summary><b class="r2">Medio</b> Nombres y dorsales reales de jugadores</summary>
-    <p>Unos 990 nombres con su dorsal, además del selector «Elegir jugador» y las plantillas completas con suplentes. La ley de imagen protege también el <b>nombre</b> cuando se usa con fines comerciales. A nuestro favor: no ponemos su cara, y una alineación es un hecho histórico.</p>
+  <details><summary><b class="r2">Duda</b> Títulos con partidos y selecciones</summary>
+    <p>FINAL CHAMPIONS 2014/2018, RMA 2-6 FCB, ESPAÑA 2010, BRASIL, FINAL MUNDIAL, apodos de personas.</p>
   </details>
-  <details><summary><b class="r2">Medio</b> 35 títulos de riesgo medio</summary>
-    <p>Selecciones (ESPAÑA 20xx, BRASIL, ARGENTINA…), PACK LA ROJA, FINAL MUNDIAL. Apodos muy de un club: RED DEVILS, ROSSONERI, LOS GALÁCTICOS, DREAM TEAM. Apodos de personas: ZIZOU, DON CARLO, LA QUINTA DEL BUITRE.</p>
+  <details><summary><b class="r1">Menos duda</b> Apodos genéricos, estilos y colores</summary>
+    <p>CULÉS, COLCHONEROS, LEONES, VINTAGE, TURF. Camisetas solo con colores, sin escudo.</p>
   </details>
-  <details><summary><b class="r2">Medio</b> Anuncios antiguos con equipos</summary>
-    <p>Hubo campañas de Meta con productos de equipos concretos (La Décima, Madrid 3D). Están en pausa, pero siguen en el historial de la cuenta.</p>
-  </details>
-  <details><summary><b class="r2">Medio</b> Las imágenes de antes de vender (primera parte de la denuncia)</summary>
-    <p class="fill">Qué imágenes son, de quién y dónde estaban publicadas. ¿Se retiraron? ¿Siguen en Instagram o en Drive público?</p>
-  </details>
-  <details><summary><b class="r1">Bajo</b> Apodos genéricos y nombres de estilo</summary>
-    <p>COLCHONEROS, CULÉS, LEONES, CHES, VINTAGE, TURF… Es la estrategia que creíamos buena desde el principio.</p>
-  </details>
-  <details><summary><b class="r1">Bajo</b> Fotos que suben los clientes</summary>
-    <p>En Sube tu foto y en los cromos, la foto la pone el cliente. Puede subir la foto de un jugador o de un escudo. Hay que saber si eso nos hace responsables y qué tienen que decir las condiciones de uso.</p>
+  <details><summary><b class="r1">Menos duda</b> Lo que pone el cliente</summary>
+    <p>Fotos que sube él y nombres que escribe él en el personalizador. ¿Quién responde si sube algo que no es suyo?</p>
   </details>
 </section>
 
@@ -171,42 +146,39 @@ ul.checks li.done{color:var(--mute);text-decoration:line-through}
   <h2>Preguntas para él</h2>
   <p class="hint">Tócalas para marcarlas. Se quedan guardadas en este móvil. Debajo de cada una hay hueco para apuntar la respuesta.</p>
 
-  <h3>Sobre la denuncia</h3>
-  <ol class="qs" data-group="denuncia">
-    <li>¿Es una vía civil (requerimiento o demanda), penal (denuncia en policía o juzgado) o solo un aviso de plataforma? ¿Qué cambia en cada caso?</li>
-    <li>¿Qué contestamos y cuándo? ¿Basta con decir lo que ya hemos retirado, o hay que firmar un compromiso de no volver a hacerlo?</li>
-    <li>Si piden dinero: con 103,96 € vendidos, ¿cuánto sería razonable? El 1 % que fija la ley saldría a 1 €, pero ¿qué más pueden reclamar (licencia que no pagamos, daño moral, sus abogados)?</li>
-    <li>¿Nos conviene decir cuánto hemos vendido o es mejor no dar cifras todavía?</li>
-    <li>¿Cuánto tiempo tienen para demandarnos? (marcas: 5 años; imagen: 4 años)</li>
+  <h3>Lo principal</h3>
+  <ol class="qs" data-group="principal">
+    <li><b>¿Podemos volver a abrir la tienda ya?</b> Si no, ¿qué es lo mínimo que hay que cambiar antes?</li>
+    <li>¿Puede ir el nombre del club en el póster (ATHLETIC 2011/12)? ¿Y el estadio y el entrenador?</li>
+    <li>¿Podemos poner los nombres y dorsales de los jugadores sin su permiso, si no sale su cara? ¿Cambia algo si está retirado o ha muerto?</li>
+    <li>¿Los colores y las rayas de la camiseta, sin escudo, pueden dar problemas?</li>
   </ol>
 
-  <h3>Sobre lo que vendemos</h3>
-  <ol class="qs" data-group="producto">
-    <li><b>La clave:</b> ¿podemos poner el nombre del club en el póster (ATHLETIC 2011/12)? ¿Y el estadio y el entrenador?</li>
-    <li>¿Podemos poner los nombres y dorsales de los jugadores sin su permiso, si no sale su cara? ¿Cambia algo si el jugador está retirado o ha muerto?</li>
-    <li>¿Los colores y las rayas de la camiseta, sin escudo, pueden ser un problema?</li>
-    <li>¿Los apodos (CULÉS, COLCHONEROS, LOS GALÁCTICOS) están limpios o depende del apodo?</li>
-    <li>¿El balón de estrellas de NOVA y el «FC» de las cartas hay que quitarlos ya?</li>
-    <li>¿Los nombres de selecciones (ESPAÑA 2010, BRASIL) son un problema si no llevan escudo de la federación?</li>
-    <li>Si es el cliente quien escribe los nombres (Crea tu 11), ¿la responsabilidad pasa a él? ¿Y si se lo dejamos ya puesto como plantilla?</li>
-    <li>¿Sirve de algo poner «producto no oficial, sin relación con ningún club»?</li>
-    <li>Otras webs venden lo mismo (cardsplug, futcards, creadores de cartas). ¿Eso nos protege en algo o da igual?</li>
+  <h3>Nombres y diseños</h3>
+  <ol class="qs" data-group="nombres">
+    <li>¿Los apodos (CULÉS, COLCHONEROS, LOS GALÁCTICOS) son seguros o depende de cada uno?</li>
+    <li>¿Podemos usar nombres de selecciones (ESPAÑA 2010, BRASIL) sin el escudo de la federación?</li>
+    <li>¿Los títulos de partidos (RMA 2-6 FCB, FINAL CHAMPIONS 2014) los cambiamos?</li>
+    <li>¿Quitamos el balón de estrellas de NOVA y el «FC» y «TOTY» de las cartas?</li>
+    <li>¿Sirve de algo poner en la web «producto no oficial, sin relación con ningún club»?</li>
+    <li>Hay otras webs que venden lo mismo (cardsplug, futcards, creadores de cartas). ¿Eso cuenta para algo?</li>
   </ol>
 
-  <h3>Sobre la empresa</h3>
+  <h3>Personalizador y clientes</h3>
+  <ol class="qs" data-group="personalizador">
+    <li>Si es el cliente quien escribe los nombres de los jugadores, ¿la responsabilidad pasa a él? ¿Y si le damos el once ya puesto como plantilla?</li>
+    <li>¿Qué deben decir las condiciones de uso sobre las fotos y los textos que pone el cliente?</li>
+    <li>¿Y en los anuncios? ¿Podemos enseñar un póster de un equipo concreto o solo diseños genéricos?</li>
+  </ol>
+
+  <h3>Empresa</h3>
   <ol class="qs" data-group="empresa">
-    <li>Si nos condenan, ¿quién paga? ¿Responde Marc con su patrimonio como autónomo? ¿Nos conviene montar una SL antes de seguir?</li>
-    <li>¿Cómo quedamos Marc y Aitor? ¿Hace falta un pacto de socios por escrito que diga quién decide y quién responde?</li>
+    <li>¿A nombre de quién abrimos: Marc como autónomo o una SL? ¿Quién responde con qué?</li>
+    <li>¿Hace falta un pacto de socios por escrito entre Marc y Aitor?</li>
     <li>¿Registramos la marca «Futsides» en la OEPM o en la EUIPO? ¿En qué clases?</li>
-    <li>¿Hay seguros de responsabilidad civil que cubran reclamaciones de marca?</li>
-    <li>¿Qué deben decir nuestras condiciones de uso sobre las fotos que suben los clientes?</li>
-    <li>¿Tendría sentido pedir licencia a algún club o al sindicato de futbolistas? ¿Cuánto suele costar?</li>
-  </ol>
-
-  <h3>Sobre plataformas</h3>
-  <ol class="qs" data-group="plataformas">
-    <li>Si nos llegan avisos de propiedad intelectual a Shopify o Meta, ¿cómo los contestamos sin que nos cierren la cuenta?</li>
-    <li>Shopify puede cerrar también las otras tiendas del mismo titular (Momenturies). ¿Separamos titulares?</li>
+    <li>¿Hay seguros que cubran reclamaciones de marca?</li>
+    <li>¿Tiene sentido pedir licencia a algún club o al sindicato de futbolistas para los equipos que más vendan? ¿Cuánto suele costar?</li>
+    <li>Tenemos otra tienda en Shopify (Momenturies). ¿Conviene separar titulares para que un problema en una no afecte a la otra?</li>
   </ol>
 </section>
 
@@ -216,53 +188,43 @@ ul.checks li.done{color:var(--mute);text-decoration:line-through}
 
   <details open><summary>Marcas · Ley 17/2001</summary>
     <ul>
-      <li><b>Art. 34:</b> el dueño de una marca puede prohibir que otro la use en el comercio, por ejemplo poniéndola en productos o en publicidad, o usándola en internet.</li>
-      <li><b>Art. 37:</b> sí se puede usar para describir algo (calidad, destino, año…) siempre que sea de forma leal. Es la puerta que podríamos usar: «alineación del Athletic de 2011/12» como dato y no como marca.</li>
-      <li><b>Caso Arsenal contra Reed (Tribunal de la UE, 2002):</b> un vendedor de bufandas decía que el nombre del club era solo una muestra de apoyo. El tribunal dijo que eso no le salvaba si el uso afectaba a la marca, aunque avisara de que no era oficial. Es el precedente que usarán contra nosotros.</li>
-      <li><b>Art. 41:</b> pueden pedir que paremos, que retiremos el producto, que paguemos daños y que se publique la sentencia.</li>
-      <li><b>Art. 42:</b> quien pone la marca en el producto y lo vende primero responde aunque no le hayan avisado antes.</li>
-      <li><b>Art. 43.5:</b> sin tener que demostrar nada, pueden cobrar el 1 % de lo facturado con esos productos. Pueden pedir más si demuestran más daño, o el precio de la licencia que no se pagó.</li>
-      <li><b>Art. 45:</b> las acciones prescriben a los 5 años, y solo se puede reclamar por los últimos 5.</li>
+      <li><b>Art. 34:</b> el dueño de una marca puede impedir que otro la use en el comercio, por ejemplo poniéndola en productos o en publicidad, o usándola en internet.</li>
+      <li><b>Art. 37:</b> sí se puede usar para describir algo (calidad, destino, año…) siempre que sea de forma leal. Es la vía para poner «alineación del Athletic de 2011/12» como dato y no como marca.</li>
+      <li><b>Caso Arsenal contra Reed (Tribunal de la UE, 2002):</b> vender bufandas con el nombre del club como muestra de apoyo seguía siendo uso de la marca, aunque avisara de que no era oficial.</li>
+      <li><b>Art. 43.5:</b> si un juez declara la infracción, el titular cobra como mínimo el 1 % de lo facturado con esos productos, y más si demuestra más daño.</li>
     </ul>
   </details>
 
   <details><summary>Nombre e imagen de jugadores · LO 1/1982</summary>
     <ul>
-      <li><b>Art. 7.6:</b> es intromisión usar el nombre, la voz o la imagen de alguien con fines publicitarios o comerciales. Ojo: dice <b>nombre</b>, no solo cara.</li>
-      <li><b>Art. 2.2:</b> deja de ser intromisión si hay consentimiento expreso.</li>
-      <li><b>Art. 8:</b> las excepciones son para información y actos públicos, no para vender productos. La duda es si una alineación histórica cuenta como información.</li>
-      <li><b>Art. 9.3:</b> si hay intromisión, el daño se presume e incluye el daño moral.</li>
-      <li><b>Art. 4:</b> si el jugador ha muerto, pueden reclamar sus herederos (y el Fiscal, hasta 80 años después). Ejemplo: los herederos de Maradona pararon al Nápoles y a EA.</li>
-      <li><b>Art. 9.5:</b> las acciones caducan a los 4 años.</li>
-      <li><b>Cómo lo hacen los que tienen licencia:</b> Panini y los videojuegos pagan a los sindicatos de futbolistas (FIFPRO y los nacionales) por el derecho colectivo de nombre e imagen.</li>
+      <li><b>Art. 7.6:</b> es intromisión usar el nombre, la voz o la imagen de alguien con fines publicitarios o comerciales. Dice <b>nombre</b>, no solo la cara.</li>
+      <li><b>Art. 2.2:</b> con consentimiento expreso no hay problema.</li>
+      <li><b>Art. 8:</b> las excepciones son para información y actos públicos. La duda es si una alineación histórica cuenta como información.</li>
+      <li><b>Art. 4:</b> si el jugador ha muerto, pueden reclamar sus herederos. Por ejemplo, los de Maradona pararon al Nápoles y a EA.</li>
+      <li><b>Cómo lo hacen los que tienen licencia:</b> Panini y los videojuegos pagan a los sindicatos de futbolistas (FIFPRO y los nacionales) por el uso colectivo de nombres e imágenes.</li>
     </ul>
   </details>
 
   <details><summary>Los datos de una alineación</summary>
-    <p>Quién jugó un partido es un hecho. El Tribunal de la UE dijo en el caso Football Dataco contra Yahoo (C-604/10, 2012) que los calendarios de liga no tienen derechos de autor. Es un argumento a favor para la información en sí, pero no protege el uso del nombre del club como marca ni el del jugador como reclamo.</p>
-  </details>
-
-  <details><summary>Vía penal · art. 274 Código Penal</summary>
-    <p>Castiga vender productos con una marca ajena idéntica o confundible, a sabiendas y sin permiso (de 6 meses a 4 años según la escala, con rebaja si la venta es pequeña). En la práctica se usa contra falsificaciones (camisetas piratas, bolsos). Hay que preguntarle si nuestro caso podría ir por aquí o es claramente civil.</p>
+    <p>Quién jugó un partido es un hecho. El Tribunal de la UE dijo en Football Dataco contra Yahoo (C-604/10, 2012) que los calendarios de liga no tienen derechos de autor. Ayuda para la información en sí, pero no cubre el nombre del club como marca ni el del jugador como reclamo.</p>
   </details>
 
   <details><summary>Plataformas (Shopify y Meta)</summary>
     <ul>
-      <li><b>Shopify</b> cierra tiendas que acumulan avisos sin contestar, y puede cerrarlas con un solo caso grave. Si cierra una por reincidencia, puede cerrar también <b>las demás tiendas del mismo dueño</b>. Para nosotros eso incluye Momenturies.</li>
-      <li><b>Meta</b> puede limitar o cerrar la cuenta publicitaria e Instagram si hay avisos repetidos de propiedad intelectual.</li>
-      <li>Quitar el producto no siempre borra el aviso. Contestarlo bien sí puede borrarlo.</li>
+      <li><b>Shopify</b> puede cerrar tiendas que acumulan avisos de propiedad intelectual. Y si cierra una, puede cerrar también las demás del mismo dueño.</li>
+      <li><b>Meta</b> puede limitar la cuenta de anuncios o de Instagram por avisos repetidos.</li>
     </ul>
   </details>
 </section>
 
 <section id="opciones" class="card">
-  <h2>Opciones para decidir después</h2>
+  <h2>Formas de abrir</h2>
   <p class="hint">Para preguntarle cuál ve más segura y luego decidir entre los dos.</p>
-  <div class="opt"><b>A · Quitar al club del arte.</b> Cabecera genérica (LEONES 2011/12), sin estadio ni entrenador, sin balón de estrellas ni FC. Los jugadores se quedan. Supone volver a sacar los 90 pósters, pero cambiar la cabecera se puede automatizar.</div>
-  <div class="opt"><b>B · Que lo escriba el cliente.</b> Vendemos campos, estilos y camisetas, y los nombres los pone el cliente en el editor. Sin plantillas con jugadores reales.</div>
-  <div class="opt"><b>C · Mezcla.</b> A para los pósters de catálogo y B para lo personalizado.</div>
-  <div class="opt"><b>D · Licencia.</b> Pedir permiso a algún club o al sindicato. Es caro y lento, pero da tranquilidad si algún equipo vende mucho.</div>
-  <div class="opt"><b>Siempre:</b> registrar «Futsides», escribir bien las condiciones de uso, poner aviso de «no oficial» y decidir quién es el titular de qué.</div>
+  <div class="opt"><b>A · Abrir quitando el club del arte.</b> Cabecera con apodo y año (LEONES 2011/12), sin estadio ni entrenador, y fuera el balón de estrellas y el «FC». Los jugadores se quedan. Cambiar las cabeceras de los 90 pósters se puede automatizar.</div>
+  <div class="opt"><b>B · Abrir solo con lo personalizado.</b> Vendemos campos, estilos y camisetas, y los nombres los escribe el cliente. Sin onces de jugadores reales ya hechos.</div>
+  <div class="opt"><b>C · Mezcla.</b> A para el catálogo y B para el personalizador.</div>
+  <div class="opt"><b>D · Con licencia.</b> Pedir permiso a algún club o al sindicato para los equipos que más vendan. Más caro y más lento, pero sin dudas.</div>
+  <div class="opt"><b>En cualquier caso:</b> registrar «Futsides», condiciones de uso bien escritas, aviso de «no oficial» y decidir a nombre de quién está todo.</div>
 </section>
 
 <section id="notas" class="card">
@@ -272,34 +234,25 @@ ul.checks li.done{color:var(--mute);text-decoration:line-through}
   <button type="button" id="copiar">Copiar notas y respuestas</button>
   <h3>Al salir</h3>
   <ul class="checks">
-    <li>Plazo para contestar la denuncia</li>
-    <li>Quién redacta la respuesta y cuánto cuesta</li>
-    <li>Qué retiramos ya y qué puede seguir a la venta</li>
-    <li>Qué documentos le mandamos</li>
+    <li>¿Abrimos? ¿Cuándo?</li>
+    <li>Qué hay que cambiar antes de abrir</li>
+    <li>Qué textos legales nos prepara y cuánto cuesta</li>
+    <li>Qué le mandamos (catálogo, ejemplos de pósters)</li>
   </ul>
 </section>
 
 <section class="card small">
-  <h2>Papeles que tenemos</h2>
-  <ul>
-    <li>Copia de las 77 descripciones retiradas, con la fecha (1 de septiembre)</li>
-    <li>Informe de los 129 títulos por nivel de riesgo</li>
-    <li>Registro del antes y después de los cambios de nombre (7 de septiembre)</li>
-    <li>Norma interna de nombres prohibidos (8 de octubre)</li>
-    <li>Listado de jugadores por equipo (Excel del 28 de septiembre)</li>
-  </ul>
   <h2>Fuentes</h2>
   <ul class="src">
     <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2001-23093" target="_blank" rel="noopener">Ley 17/2001 de Marcas (BOE)</a></li>
     <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1982-11196" target="_blank" rel="noopener">LO 1/1982, honor, intimidad y propia imagen (BOE)</a></li>
-    <li><a href="https://iberley.es/legislacion/articulo-274-codigo-penal" target="_blank" rel="noopener">Art. 274 del Código Penal</a></li>
     <li><a href="https://curia.europa.eu/en/actu/communiques/cp02/aff/cp0291en.htm" target="_blank" rel="noopener">Arsenal contra Reed, C-206/01 (Tribunal de la UE)</a></li>
     <li><a href="https://www.cms-lawnow.com/ealerts/2012/11/football-fixtures-finally-freed-from-fees" target="_blank" rel="noopener">Football Dataco contra Yahoo, C-604/10</a></li>
     <li><a href="https://ga-p.com/?p=393791" target="_blank" rel="noopener">Supremo 2026 sobre el 1 % de indemnización (GA_P)</a></li>
     <li><a href="https://letslaw.es/uso-imagen-y-nombre-de-futbolistas-en-aplicaciones/" target="_blank" rel="noopener">Nombre e imagen de futbolistas en apps (Letslaw)</a></li>
     <li><a href="https://www.cuatrecasas.com/es/spain/art/el-napoles-no-podra-usar-la-imagen-de-maradona" target="_blank" rel="noopener">Herederos de Maradona contra el Nápoles (Cuatrecasas)</a></li>
     <li><a href="https://football-legal.com/content/panini-case-the-unfp-does-indeed-own-the-right-to-use-the-individual-images-of-professional-players-in-collective-form" target="_blank" rel="noopener">Panini y el derecho colectivo de imagen (Francia, 2024)</a></li>
-    <li><a href="https://help.shopify.com/en/manual/compliance/intellectual-property/copyright-policy" target="_blank" rel="noopener">Política de Shopify sobre infractores reincidentes</a></li>
+    <li><a href="https://help.shopify.com/en/manual/compliance/intellectual-property/copyright-policy" target="_blank" rel="noopener">Política de Shopify sobre propiedad intelectual</a></li>
     <li><a href="https://transparency.meta.com/es-la/policies/community-standards/intellectual-property" target="_blank" rel="noopener">Política de Meta sobre propiedad intelectual</a></li>
   </ul>
 </section>
@@ -312,8 +265,8 @@ ul.checks li.done{color:var(--mute);text-decoration:line-through}
 
   function toast(t){var el=document.getElementById("toast");el.textContent=t;el.classList.add("on");setTimeout(function(){el.classList.remove("on")},1600)}
   function wire(){
-    var st={};try{st=JSON.parse(get("fs-abg-state")||"{}")}catch(e){st={}}
-    function save(){put("fs-abg-state",JSON.stringify(st))}
+    var st={};try{st=JSON.parse(get("fs-abg2-state")||"{}")}catch(e){st={}}
+    function save(){put("fs-abg2-state",JSON.stringify(st))}
     document.querySelectorAll("ol.qs").forEach(function(ol){
       var g=ol.getAttribute("data-group");
       ol.querySelectorAll("li").forEach(function(li,i){
@@ -334,7 +287,7 @@ ul.checks li.done{color:var(--mute);text-decoration:line-through}
     if(st.notas)n.value=st.notas;
     n.addEventListener("input",function(){st.notas=n.value;save()});
     document.getElementById("copiar").addEventListener("click",function(){
-      var out=["REUNIÓN ABOGADO FUTSIDES"];
+      var out=["FUTSIDES · ¿PODEMOS ABRIR? · ABOGADO"];
       document.querySelectorAll("ol.qs li").forEach(function(li){
         var t=li.querySelector("textarea").value.trim();
         if(t)out.push("• "+li.querySelector(".q").textContent.trim()+"\n  → "+t);
