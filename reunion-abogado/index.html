@@ -78,49 +78,237 @@ ul.checks li.done{color:var(--mute);text-decoration:line-through}
 </style>
 </head>
 <body>
-<div id="lock">
-  <form id="f" autocomplete="off">
-    <p class="kicker">Futsides</p>
-    <h1>Reunión con el abogado</h1>
-    <p class="hint">Escribe la contraseña que te ha pasado Marc.</p>
-    <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Contraseña">
-    <label><input id="rec" type="checkbox" checked style="width:auto"> Recordar en este móvil</label>
-    <button type="submit">Abrir</button>
-    <p class="err" id="err"></p>
-  </form>
-</div>
-<main id="app" hidden></main>
+<main id="app"><header class="top">
+  <p class="kicker">Futsides · reunión con el abogado</p>
+  <h1>Lo que hay que llevar en la cabeza</h1>
+  <p class="sub">Preparado el 29 de octubre de 2026 por Marc y Aitor. Marca las preguntas según se vayan respondiendo y apunta lo que diga.</p>
+  <nav class="chips">
+    <a href="#resumen">Resumen</a>
+    <a href="#datos">Datos</a>
+    <a href="#hecho">Lo hecho</a>
+    <a href="#expuesto">Lo expuesto</a>
+    <a href="#preguntas">Preguntas</a>
+    <a href="#ley">La ley</a>
+    <a href="#opciones">Opciones</a>
+    <a href="#notas">Notas</a>
+  </nav>
+</header>
+
+<section id="resumen" class="card hero">
+  <h2>En 30 segundos</h2>
+  <p>El <b>1 de septiembre de 2026</b> llegó una denuncia por dos cosas: unas imágenes subidas antes de vender y el uso de marcas de clubes y competiciones y de nombres de jugadores. En una semana quitamos las 77 descripciones y cambiamos los nombres con marca literal (CHAMPIONS, UCL, TEAM OF THE YEAR, cartas de EA).</p>
+  <p>Volumen real: <b>2 pedidos, 5 unidades, 103,96 €</b> en toda la vida de la tienda (agosto de 2026). En anuncios de Meta se gastaron 663 €.</p>
+  <p class="warn"><b>El punto débil:</b> los títulos ya están cambiados, pero el póster impreso sigue diciendo el club, el estadio y el entrenador. Por ejemplo, el producto se llama LEONES 2011-12, pero la lámina pone <i>ATHLETIC 2011/12 · ESTADIO SAN MAMÉS · MARCELO BIELSA</i>, con 11 nombres reales, dorsales y la camiseta rojiblanca.</p>
+  <p><b>Lo que buscamos salir sabiendo:</b> qué podemos vender tal cual, qué hay que cambiar en el arte y qué contestamos a la denuncia.</p>
+</section>
+
+<section id="datos" class="card">
+  <h2>Datos a mano</h2>
+  <p class="hint">Lo que esté en amarillo lo rellenamos antes de entrar, o se lo preguntamos a él.</p>
+  <dl class="facts">
+    <dt>Fecha de la denuncia</dt><dd>1 de septiembre de 2026</dd>
+    <dt>Quién denuncia</dt><dd class="fill">Club, liga, UEFA, EA, un jugador, un fotógrafo…</dd>
+    <dt>Por qué vía</dt><dd class="fill">Burofax, correo, aviso de Shopify o Meta, juzgado, policía…</dd>
+    <dt>Qué piden</dt><dd class="fill">Retirar productos, dinero, datos de ventas…</dd>
+    <dt>Plazo que dan</dt><dd class="fill">&nbsp;</dd>
+    <dt>¿Se contestó?</dt><dd class="fill">Qué se dijo y cuándo</dd>
+    <dt>Ventas totales</dt><dd>2 pedidos · 5 unidades · 103,96 € (16 y 26 de agosto de 2026)</dd>
+    <dt>Gasto en anuncios</dt><dd>663 € en Meta. Hubo anuncios con equipos concretos (La Décima, Madrid 3D)</dd>
+    <dt>Catálogo</dt><dd>90 productos con alineación (unos 990 nombres de jugadores), 34 campos, 17 cartas y packs</dd>
+    <dt>Titular</dt><dd>Marc es autónomo desde el 11 de agosto de 2026. <span class="fill">¿A nombre de quién están Shopify, el dominio y Meta? ¿Qué papel tiene Aitor sobre el papel?</span></dd>
+    <dt>Otras tiendas del mismo titular</dt><dd>Momenturies, también en Shopify (importa, ver «Plataformas»)</dd>
+  </dl>
+</section>
+
+<section id="hecho" class="card">
+  <h2>Lo que ya hemos hecho</h2>
+  <p class="hint">Sirve para enseñar que actuamos rápido y de buena fe. Todo está guardado y se puede deshacer.</p>
+  <ol class="timeline">
+    <li><span>1 sep</span> Quitadas las <b>77 descripciones</b> de equipos, partidos y packs (y sus traducciones al inglés). No están borradas: se guardaron en un campo interno.</li>
+    <li><span>1 sep</span> Informe de los 129 títulos por nivel de riesgo: 10 alto, 35 medio y 84 bajo.</li>
+    <li><span>7 sep</span> Renombrados los campos con marca literal: CHAMPIONS → NOVA (también BLUE, GOLD y RED), UCL → ORBITA, TEAM OF THE YEAR → ONCE DE ORO, OLIMPO → COLISEO.</li>
+    <li><span>7 sep</span> Renombradas 15 de las 17 cartas para quitar FC 26, TOTY, Icon y Team of the Week/Season (ahora SOLAR, ONIX, ZAFIRO, etc.).</li>
+    <li><span>28 sep</span> Repasados y corregidos los nombres de jugadores (68 erratas). Esto no es legal, pero enseña que los nombres son datos históricos.</li>
+    <li><span>8 oct</span> Norma interna escrita: en SEO, textos de fotos, anuncios y descripciones no se ponen clubes ni sus siglas, ni competiciones (Champions, UEFA, FIFA, Mundial, LaLiga), ni jugadores o sus apodos, ni escudos.</li>
+    <li><span>Siempre</span> No usamos escudos ni logos de clubes en los pósters, solo los colores de la camiseta. En el cromo de estilo mundialista no hay copa ni emblema oficial.</li>
+  </ol>
+</section>
+
+<section id="expuesto" class="card">
+  <h2>Lo que sigue expuesto</h2>
+  <p class="hint">De más a menos grave, según lo que hemos visto.</p>
+
+  <details open><summary><b class="r3">Alto</b> Nombre del club, estadio y entrenador en el arte impreso</summary>
+    <p>Los 90 pósters llevan el club en grande en la cabecera (ATHLETIC, etc.), el estadio y el entrenador abajo. Cambiar el título de la tienda no cambia la lámina que llega a casa. Los nombres de los clubes casi siempre son marcas registradas, y algunos estadios también.</p>
+  </details>
+  <details open><summary><b class="r3">Alto</b> Dibujos que siguen copiando marcas</summary>
+    <p>NOVA BLUE, GOLD y RED llevan dibujado el balón de estrellas de la Champions. Cuatro cartas llevan el logo «FC» de EA y una lleva «TOTY». Lo decidimos así a sabiendas, y es justo lo que puede usarse para decir que hubo mala fe.</p>
+  </details>
+  <details><summary><b class="r3">Alto</b> Partidos con marca en el título, sin cambiar</summary>
+    <p>FINAL CHAMPIONS 2014, FINAL CHAMPIONS 2018, RMA 0-3 FCB (2005) y RMA 2-6 FCB (2009). De los 10 títulos de riesgo alto, los campos se renombraron el 7 de septiembre, pero estos partidos no.</p>
+  </details>
+  <details><summary><b class="r2">Medio</b> Nombres y dorsales reales de jugadores</summary>
+    <p>Unos 990 nombres con su dorsal, además del selector «Elegir jugador» y las plantillas completas con suplentes. La ley de imagen protege también el <b>nombre</b> cuando se usa con fines comerciales. A nuestro favor: no ponemos su cara, y una alineación es un hecho histórico.</p>
+  </details>
+  <details><summary><b class="r2">Medio</b> 35 títulos de riesgo medio</summary>
+    <p>Selecciones (ESPAÑA 20xx, BRASIL, ARGENTINA…), PACK LA ROJA, FINAL MUNDIAL. Apodos muy de un club: RED DEVILS, ROSSONERI, LOS GALÁCTICOS, DREAM TEAM. Apodos de personas: ZIZOU, DON CARLO, LA QUINTA DEL BUITRE.</p>
+  </details>
+  <details><summary><b class="r2">Medio</b> Anuncios antiguos con equipos</summary>
+    <p>Hubo campañas de Meta con productos de equipos concretos (La Décima, Madrid 3D). Están en pausa, pero siguen en el historial de la cuenta.</p>
+  </details>
+  <details><summary><b class="r2">Medio</b> Las imágenes de antes de vender (primera parte de la denuncia)</summary>
+    <p class="fill">Qué imágenes son, de quién y dónde estaban publicadas. ¿Se retiraron? ¿Siguen en Instagram o en Drive público?</p>
+  </details>
+  <details><summary><b class="r1">Bajo</b> Apodos genéricos y nombres de estilo</summary>
+    <p>COLCHONEROS, CULÉS, LEONES, CHES, VINTAGE, TURF… Es la estrategia que creíamos buena desde el principio.</p>
+  </details>
+  <details><summary><b class="r1">Bajo</b> Fotos que suben los clientes</summary>
+    <p>En Sube tu foto y en los cromos, la foto la pone el cliente. Puede subir la foto de un jugador o de un escudo. Hay que saber si eso nos hace responsables y qué tienen que decir las condiciones de uso.</p>
+  </details>
+</section>
+
+<section id="preguntas" class="card">
+  <h2>Preguntas para él</h2>
+  <p class="hint">Tócalas para marcarlas. Se quedan guardadas en este móvil. Debajo de cada una hay hueco para apuntar la respuesta.</p>
+
+  <h3>Sobre la denuncia</h3>
+  <ol class="qs" data-group="denuncia">
+    <li>¿Es una vía civil (requerimiento o demanda), penal (denuncia en policía o juzgado) o solo un aviso de plataforma? ¿Qué cambia en cada caso?</li>
+    <li>¿Qué contestamos y cuándo? ¿Basta con decir lo que ya hemos retirado, o hay que firmar un compromiso de no volver a hacerlo?</li>
+    <li>Si piden dinero: con 103,96 € vendidos, ¿cuánto sería razonable? El 1 % que fija la ley saldría a 1 €, pero ¿qué más pueden reclamar (licencia que no pagamos, daño moral, sus abogados)?</li>
+    <li>¿Nos conviene decir cuánto hemos vendido o es mejor no dar cifras todavía?</li>
+    <li>¿Cuánto tiempo tienen para demandarnos? (marcas: 5 años; imagen: 4 años)</li>
+  </ol>
+
+  <h3>Sobre lo que vendemos</h3>
+  <ol class="qs" data-group="producto">
+    <li><b>La clave:</b> ¿podemos poner el nombre del club en el póster (ATHLETIC 2011/12)? ¿Y el estadio y el entrenador?</li>
+    <li>¿Podemos poner los nombres y dorsales de los jugadores sin su permiso, si no sale su cara? ¿Cambia algo si el jugador está retirado o ha muerto?</li>
+    <li>¿Los colores y las rayas de la camiseta, sin escudo, pueden ser un problema?</li>
+    <li>¿Los apodos (CULÉS, COLCHONEROS, LOS GALÁCTICOS) están limpios o depende del apodo?</li>
+    <li>¿El balón de estrellas de NOVA y el «FC» de las cartas hay que quitarlos ya?</li>
+    <li>¿Los nombres de selecciones (ESPAÑA 2010, BRASIL) son un problema si no llevan escudo de la federación?</li>
+    <li>Si es el cliente quien escribe los nombres (Crea tu 11), ¿la responsabilidad pasa a él? ¿Y si se lo dejamos ya puesto como plantilla?</li>
+    <li>¿Sirve de algo poner «producto no oficial, sin relación con ningún club»?</li>
+    <li>Otras webs venden lo mismo (cardsplug, futcards, creadores de cartas). ¿Eso nos protege en algo o da igual?</li>
+  </ol>
+
+  <h3>Sobre la empresa</h3>
+  <ol class="qs" data-group="empresa">
+    <li>Si nos condenan, ¿quién paga? ¿Responde Marc con su patrimonio como autónomo? ¿Nos conviene montar una SL antes de seguir?</li>
+    <li>¿Cómo quedamos Marc y Aitor? ¿Hace falta un pacto de socios por escrito que diga quién decide y quién responde?</li>
+    <li>¿Registramos la marca «Futsides» en la OEPM o en la EUIPO? ¿En qué clases?</li>
+    <li>¿Hay seguros de responsabilidad civil que cubran reclamaciones de marca?</li>
+    <li>¿Qué deben decir nuestras condiciones de uso sobre las fotos que suben los clientes?</li>
+    <li>¿Tendría sentido pedir licencia a algún club o al sindicato de futbolistas? ¿Cuánto suele costar?</li>
+  </ol>
+
+  <h3>Sobre plataformas</h3>
+  <ol class="qs" data-group="plataformas">
+    <li>Si nos llegan avisos de propiedad intelectual a Shopify o Meta, ¿cómo los contestamos sin que nos cierren la cuenta?</li>
+    <li>Shopify puede cerrar también las otras tiendas del mismo titular (Momenturies). ¿Separamos titulares?</li>
+  </ol>
+</section>
+
+<section id="ley" class="card">
+  <h2>Lo que dice la ley (resumido)</h2>
+  <p class="hint">Para entender lo que nos diga. No sustituye su opinión.</p>
+
+  <details open><summary>Marcas · Ley 17/2001</summary>
+    <ul>
+      <li><b>Art. 34:</b> el dueño de una marca puede prohibir que otro la use en el comercio, por ejemplo poniéndola en productos o en publicidad, o usándola en internet.</li>
+      <li><b>Art. 37:</b> sí se puede usar para describir algo (calidad, destino, año…) siempre que sea de forma leal. Es la puerta que podríamos usar: «alineación del Athletic de 2011/12» como dato y no como marca.</li>
+      <li><b>Caso Arsenal contra Reed (Tribunal de la UE, 2002):</b> un vendedor de bufandas decía que el nombre del club era solo una muestra de apoyo. El tribunal dijo que eso no le salvaba si el uso afectaba a la marca, aunque avisara de que no era oficial. Es el precedente que usarán contra nosotros.</li>
+      <li><b>Art. 41:</b> pueden pedir que paremos, que retiremos el producto, que paguemos daños y que se publique la sentencia.</li>
+      <li><b>Art. 42:</b> quien pone la marca en el producto y lo vende primero responde aunque no le hayan avisado antes.</li>
+      <li><b>Art. 43.5:</b> sin tener que demostrar nada, pueden cobrar el 1 % de lo facturado con esos productos. Pueden pedir más si demuestran más daño, o el precio de la licencia que no se pagó.</li>
+      <li><b>Art. 45:</b> las acciones prescriben a los 5 años, y solo se puede reclamar por los últimos 5.</li>
+    </ul>
+  </details>
+
+  <details><summary>Nombre e imagen de jugadores · LO 1/1982</summary>
+    <ul>
+      <li><b>Art. 7.6:</b> es intromisión usar el nombre, la voz o la imagen de alguien con fines publicitarios o comerciales. Ojo: dice <b>nombre</b>, no solo cara.</li>
+      <li><b>Art. 2.2:</b> deja de ser intromisión si hay consentimiento expreso.</li>
+      <li><b>Art. 8:</b> las excepciones son para información y actos públicos, no para vender productos. La duda es si una alineación histórica cuenta como información.</li>
+      <li><b>Art. 9.3:</b> si hay intromisión, el daño se presume e incluye el daño moral.</li>
+      <li><b>Art. 4:</b> si el jugador ha muerto, pueden reclamar sus herederos (y el Fiscal, hasta 80 años después). Ejemplo: los herederos de Maradona pararon al Nápoles y a EA.</li>
+      <li><b>Art. 9.5:</b> las acciones caducan a los 4 años.</li>
+      <li><b>Cómo lo hacen los que tienen licencia:</b> Panini y los videojuegos pagan a los sindicatos de futbolistas (FIFPRO y los nacionales) por el derecho colectivo de nombre e imagen.</li>
+    </ul>
+  </details>
+
+  <details><summary>Los datos de una alineación</summary>
+    <p>Quién jugó un partido es un hecho. El Tribunal de la UE dijo en el caso Football Dataco contra Yahoo (C-604/10, 2012) que los calendarios de liga no tienen derechos de autor. Es un argumento a favor para la información en sí, pero no protege el uso del nombre del club como marca ni el del jugador como reclamo.</p>
+  </details>
+
+  <details><summary>Vía penal · art. 274 Código Penal</summary>
+    <p>Castiga vender productos con una marca ajena idéntica o confundible, a sabiendas y sin permiso (de 6 meses a 4 años según la escala, con rebaja si la venta es pequeña). En la práctica se usa contra falsificaciones (camisetas piratas, bolsos). Hay que preguntarle si nuestro caso podría ir por aquí o es claramente civil.</p>
+  </details>
+
+  <details><summary>Plataformas (Shopify y Meta)</summary>
+    <ul>
+      <li><b>Shopify</b> cierra tiendas que acumulan avisos sin contestar, y puede cerrarlas con un solo caso grave. Si cierra una por reincidencia, puede cerrar también <b>las demás tiendas del mismo dueño</b>. Para nosotros eso incluye Momenturies.</li>
+      <li><b>Meta</b> puede limitar o cerrar la cuenta publicitaria e Instagram si hay avisos repetidos de propiedad intelectual.</li>
+      <li>Quitar el producto no siempre borra el aviso. Contestarlo bien sí puede borrarlo.</li>
+    </ul>
+  </details>
+</section>
+
+<section id="opciones" class="card">
+  <h2>Opciones para decidir después</h2>
+  <p class="hint">Para preguntarle cuál ve más segura y luego decidir entre los dos.</p>
+  <div class="opt"><b>A · Quitar al club del arte.</b> Cabecera genérica (LEONES 2011/12), sin estadio ni entrenador, sin balón de estrellas ni FC. Los jugadores se quedan. Supone volver a sacar los 90 pósters, pero cambiar la cabecera se puede automatizar.</div>
+  <div class="opt"><b>B · Que lo escriba el cliente.</b> Vendemos campos, estilos y camisetas, y los nombres los pone el cliente en el editor. Sin plantillas con jugadores reales.</div>
+  <div class="opt"><b>C · Mezcla.</b> A para los pósters de catálogo y B para lo personalizado.</div>
+  <div class="opt"><b>D · Licencia.</b> Pedir permiso a algún club o al sindicato. Es caro y lento, pero da tranquilidad si algún equipo vende mucho.</div>
+  <div class="opt"><b>Siempre:</b> registrar «Futsides», escribir bien las condiciones de uso, poner aviso de «no oficial» y decidir quién es el titular de qué.</div>
+</section>
+
+<section id="notas" class="card">
+  <h2>Notas de la reunión</h2>
+  <p class="hint">Se guardan solas en este móvil. Al acabar, cópialas y mándalas por WhatsApp.</p>
+  <textarea id="notas-libres" rows="10" placeholder="Lo que diga, plazos, honorarios, próximos pasos…"></textarea>
+  <button type="button" id="copiar">Copiar notas y respuestas</button>
+  <h3>Al salir</h3>
+  <ul class="checks">
+    <li>Plazo para contestar la denuncia</li>
+    <li>Quién redacta la respuesta y cuánto cuesta</li>
+    <li>Qué retiramos ya y qué puede seguir a la venta</li>
+    <li>Qué documentos le mandamos</li>
+  </ul>
+</section>
+
+<section class="card small">
+  <h2>Papeles que tenemos</h2>
+  <ul>
+    <li>Copia de las 77 descripciones retiradas, con la fecha (1 de septiembre)</li>
+    <li>Informe de los 129 títulos por nivel de riesgo</li>
+    <li>Registro del antes y después de los cambios de nombre (7 de septiembre)</li>
+    <li>Norma interna de nombres prohibidos (8 de octubre)</li>
+    <li>Listado de jugadores por equipo (Excel del 28 de septiembre)</li>
+  </ul>
+  <h2>Fuentes</h2>
+  <ul class="src">
+    <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2001-23093" target="_blank" rel="noopener">Ley 17/2001 de Marcas (BOE)</a></li>
+    <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1982-11196" target="_blank" rel="noopener">LO 1/1982, honor, intimidad y propia imagen (BOE)</a></li>
+    <li><a href="https://iberley.es/legislacion/articulo-274-codigo-penal" target="_blank" rel="noopener">Art. 274 del Código Penal</a></li>
+    <li><a href="https://curia.europa.eu/en/actu/communiques/cp02/aff/cp0291en.htm" target="_blank" rel="noopener">Arsenal contra Reed, C-206/01 (Tribunal de la UE)</a></li>
+    <li><a href="https://www.cms-lawnow.com/ealerts/2012/11/football-fixtures-finally-freed-from-fees" target="_blank" rel="noopener">Football Dataco contra Yahoo, C-604/10</a></li>
+    <li><a href="https://ga-p.com/?p=393791" target="_blank" rel="noopener">Supremo 2026 sobre el 1 % de indemnización (GA_P)</a></li>
+    <li><a href="https://letslaw.es/uso-imagen-y-nombre-de-futbolistas-en-aplicaciones/" target="_blank" rel="noopener">Nombre e imagen de futbolistas en apps (Letslaw)</a></li>
+    <li><a href="https://www.cuatrecasas.com/es/spain/art/el-napoles-no-podra-usar-la-imagen-de-maradona" target="_blank" rel="noopener">Herederos de Maradona contra el Nápoles (Cuatrecasas)</a></li>
+    <li><a href="https://football-legal.com/content/panini-case-the-unfp-does-indeed-own-the-right-to-use-the-individual-images-of-professional-players-in-collective-form" target="_blank" rel="noopener">Panini y el derecho colectivo de imagen (Francia, 2024)</a></li>
+    <li><a href="https://help.shopify.com/en/manual/compliance/intellectual-property/copyright-policy" target="_blank" rel="noopener">Política de Shopify sobre infractores reincidentes</a></li>
+    <li><a href="https://transparency.meta.com/es-la/policies/community-standards/intellectual-property" target="_blank" rel="noopener">Política de Meta sobre propiedad intelectual</a></li>
+  </ul>
+</section>
+</main>
 <div class="toast" id="toast"></div>
 <script>
-var DATA="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";
 (function(){
-  function b64(s){var b=atob(s),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u}
   function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
   function put(k,v){try{localStorage.setItem(k,v)}catch(e){}}
-  function del(k){try{localStorage.removeItem(k)}catch(e){}}
-  async function open(pw){
-    var raw=b64(DATA),salt=raw.slice(0,16),iv=raw.slice(16,28),ct=raw.slice(28);
-    var key=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
-    var k=await crypto.subtle.deriveKey({name:"PBKDF2",salt:salt,iterations:250000,hash:"SHA-256"},key,{name:"AES-GCM",length:256},false,["decrypt"]);
-    var pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:iv},k,ct);
-    return new TextDecoder().decode(pt);
-  }
-  async function tryOpen(pw,remember){
-    try{
-      var html=await open(pw);
-      if(remember)put("fs-abg-pw",pw);
-      document.getElementById("lock").remove();
-      var app=document.getElementById("app");app.innerHTML=html;app.hidden=false;wire();
-      return true;
-    }catch(e){return false}
-  }
-  document.getElementById("f").addEventListener("submit",async function(e){
-    e.preventDefault();
-    var ok=await tryOpen(document.getElementById("pw").value.trim(),document.getElementById("rec").checked);
-    if(!ok)document.getElementById("err").textContent="Contraseña incorrecta";
-  });
-  var saved=get("fs-abg-pw");
-  if(saved)tryOpen(saved,false).then(function(ok){if(!ok)del("fs-abg-pw")});
 
   function toast(t){var el=document.getElementById("toast");el.textContent=t;el.classList.add("on");setTimeout(function(){el.classList.remove("on")},1600)}
   function wire(){
@@ -158,6 +346,7 @@ var DATA="p7kIhkUqDPV9T30V2qOYf8HxXLIAoEqOEy59VtQOHJIMg0ZY3tMI4KQSQsGJSvQ3rnFezK
       });
     });
   }
+  wire();
 })();
 </script>
 </body>
